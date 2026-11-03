@@ -7,7 +7,7 @@ let todos = [];
 let nextId = 1;
 
 app.get("/healthz", (req, res) => {
-  res.json({ status: "ok" });
+  res.json({ status: "ok", version: 'v2' });
 });
 
 app.get("/todos", (req, res) => {
